@@ -123,17 +123,6 @@ and bam, done.
 
 ### Cli Contexts
 
-```yml
-current-server: default
-servers:
-	- name: default
-	  address: http://localhost/upload
-	  token: "qghGISyIOAIezbYTLcfg02unwjDKtZo6SE3B"
-	- name: remote
-	  address: https://img.foobaz.de/upload
-	  token: "YlLF933IA4HATQNaZu8P8edZtZBEYs8jeXQb"
-```
-
 ### General
 
 ### Authentication
