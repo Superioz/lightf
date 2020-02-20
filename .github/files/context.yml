@@ -1,0 +1,5 @@
+current-server: default
+servers:
+	- name: default
+	  address: http://localhost/upload
+	  token: "this_is_a_token"

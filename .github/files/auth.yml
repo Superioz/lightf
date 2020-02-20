@@ -1,0 +1,11 @@
+users:
+    - name: "private"
+      token: "this_is_a_token"
+      types:
+          - "image/png"
+          - "image/jpg"
+          - "application/pdf"
+          - "text/plain"
+      size: 2048
+      expire: 65
+      fileKey: "file"

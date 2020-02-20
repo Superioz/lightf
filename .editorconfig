@@ -1,0 +1,29 @@
+# .editorconfig is just a convention for many text editors
+# and IDEs to support configuring basic formatting via one file.
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+# Set encoding of files with specified ending.
+[*.{java,kt,json,yml,yaml,xml}]
+charset = utf-8
+
+# Set indentation for Go files
+# As it seems, gofmt forces it to be tabs,
+# but it makes editing more convenient
+[*.go]
+indent_style = space
+indent_size = 4
+
+# YAML doesn't like tabs
+[*.{yml,yaml}]
+indent_style = space
+indent_size = 4
+
+# Makefile doesn't like spaces
+[Makefile]
+indent_style = tab
+indent_size = 2

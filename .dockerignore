@@ -1,0 +1,7 @@
+client
+VERSION_CLI
+Makefile
+.git
+.gitignore
+README.md
+Dockerfile

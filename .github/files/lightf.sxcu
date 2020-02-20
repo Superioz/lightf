@@ -1,0 +1,12 @@
+{
+  "Name": "lightf_private",
+  "DestinationType": "ImageUploader, TextUploader, FileUploader",
+  "RequestType": "POST",
+  "RequestURL": "http://localhost:8081/upload",
+  "FileFormName": "file",
+  "Arguments": {
+    "token": "qghGISyIOAIezbYTLcfg02unwjDKtZo6SE3B"
+  },
+  "ResponseType": "Text",
+  "URL": "$json:address$"
+}

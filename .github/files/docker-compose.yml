@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+    lightf:
+        image: lightf:0.2.16
+        environment: 
+            LIGHTF_GIN_PORT: 8081
+            LIGHTF_AUTH_CONF: /etc/lightf
+            LIGHTF_STORAGE: /var/lib/lightf/storage
+            LIGHTF_STORAGE_ADDRESS: "http://127.0.0.1:8080/%s"
+        ports:
+            - "8081:8081"
+        volumes:
+            - "./auth.yml:/etc/lightf/auth.yml:ro"
+            - "./storage:/var/lib/lightf/storage"
+    serve:
+        image: halverneus/static-file-server:v1.7.2
+        environment: 
+            PORT: 8080
+            FOLDER: /var/www
+            SHOW_LISTING: "false"
+        ports:
+            - "8080:8080"
+        volumes:
+            - "./storage/files:/var/www"
